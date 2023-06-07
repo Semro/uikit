@@ -90,7 +90,6 @@ export function withTableSelection<I extends TableDataItem, E extends {} = {}>(
         }: {
             checked: boolean;
             disabled: boolean;
-            headCell?: boolean;
             handler: React.ChangeEventHandler<HTMLInputElement>;
         }) {
             return (
