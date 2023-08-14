@@ -1,3 +1,11 @@
+## TextArea
+
+Additional functionality is enabled via HOCs:
+
+- [withCounter](#withCounter)
+
+### Props
+
 | Property     | Type                                                | Default         | Description                                                                                                                         |
 | :----------- | :-------------------------------------------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | autoComplete | `boolean \| string`                                 | `-`             | The control's `autocomplete` attribute                                                                                              |
@@ -28,3 +36,19 @@
 | type         | `string`                                            | `-`             | The control's type                                                                                                                  |
 | value        | `string`                                            | `-`             | The control's value                                                                                                                 |
 | view         | `'normal' \| 'clear'`                               | `'normal'`      | The control's view. `'normal'` by default                                                                                           |
+| note         | `React.ReactNode`                                   | `-`             | An optional element displayed under the lower right corner of the control and sharing the place with the error container            |
+
+## withCounter
+
+Adds a special symbol counter under the lower right corner of the control.
+
+### Props
+
+```ts
+interface Props {
+  /**
+   * Number of max symbols length for counter.
+   */
+  counterMax: number;
+}
+```
